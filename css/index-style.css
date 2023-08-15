@@ -250,6 +250,3 @@ body {
   #resume-button:active {
     transform: translateY(-1px);
   }
-  .artwork img{
-    padding:20%;
-  }

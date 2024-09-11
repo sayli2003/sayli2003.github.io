@@ -1,299 +1,425 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/index-style.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/Skillslist.css"/>
+    <title>Mini Profile - Free Bootstrap CSS Template</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+-->
+  </head>
+  <body>
+    
+    <!-- Welcome Section -->
+   
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
+      <div>
+        <div class="container-fluid tm-brand-container-outer">
+          <div class="row">
+            <div class="col-12" style="display: flex; align-items: center;">
+              <!-- Logo Area -->
+              <!-- Black transparent bg -->
+                <div class="tm-brand-container text-center">
+                  <img height="300px" width="300px" src="img/ProfilePic.jpeg" alt="img/ProfilePic.jpeg" style="border-radius: 100%;">
+                </div>
+              <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner" style="height: max-content; justify-content: center;">
+                <div class="tm-brand-container text-center">
+                  <h1 class="tm-brand-name">Sayli Borole</h1>
+                  <p class="tm-brand-description mb-0">Computer Engineering Student at MKSSS's Cummins College</p>
+                  <ul class="example-2">
+                    <li class="icon-content">
+                      <a
+                        href="https://linkedin.com/"
+                        aria-label="LinkedIn"
+                        data-social="linkedin"
+                      >
+                        <div class="filled"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-linkedin"
+                          viewBox="0 0 16 16"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-content">
+                      <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                        <div class="filled"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-github"
+                          viewBox="0 0 16 16"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-content">
+                      <a
+                        href="https://www.instagram.com/"
+                        aria-label="Instagram"
+                        data-social="instagram"
+                      >
+                        <div class="filled"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-instagram"
+                          viewBox="0 0 16 16"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="icon-content">
+                      <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+                        <div class="filled"></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-youtube"
+                          viewBox="0 0 16 16"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
 
-<div id="navbar">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portfolio</a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#education">Education</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#Interests">Interests</a>
-          <a class="nav-link" href="#contactme">Contact me</a>
-          <!-- <a class="nav-link">Experience</a> -->
-        </div>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<div class="content">
-  <div class="name-content">
-    <div class="nametitle">
-      <span id="name">Sayli Borole</span>
-      <br>  
-      <span id="location-email">
-        Pune | Maharashtra    
-        <a href="mailto:sayliborole29@gmail.com">
-        sayliborole29@gmail.com
-      </a></span>
-    </div>
-    
-    
-    <div>
-      To leverage my technical skills and experience in software engineering to develop cutting-edge solutions and contribute to the growth and success of a dynamic organization  
-    </div>
-    <div class="social-media">
-      <div class="linkedin">
-        <a href="https://www.linkedin.com/in/sayli-borole-416a97218/">
-          <svg fill="#000000" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"></path> <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087 c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345 c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537 c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002 z"></path> </g> </g></svg>
-        </a>
-      </div>
-      <div class="git">
-        <a href="https://github.com/sayli2003">
-          <svg viewBox="0 0 20 20" height="50px" width="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Sayli's github</title> <defs> </defs> 
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
-            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> 
-            <g id="icons" transform="translate(56.000000, 160.000000)"> 
-              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
-        </a>
-      </div>
-      <div class="gmail">
-        <a href="mailto:sayliborole29@gmail.com">
-          <svg fill="#000000" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 216 216" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108,0C48.353,0,0,48.353,0,108s48.353,108,108,108s108-48.353,108-108S167.647,0,108,0z M156.657,60L107.96,98.498 L57.679,60H156.657z M161.667,156h-109V76.259l50.244,38.11c1.347,1.03,3.34,1.545,4.947,1.545c1.645,0,3.073-0.54,4.435-1.616 l49.374-39.276V156z"></path> </g></svg>
-        </a>
-      </div>
-    </div>
-    <div class="resume">
-      <button id="resume-button"> <a href="/docs/SAYLI_BOROLE_Btech_CS_Internship.pdf" style="text-decoration:none ;color:inherit;">DownLoad Resume</a>
-      </button>
-    </div>
-  </div>
-  <div class="myimage">
-<img src="/img/Sayli_Photo.jpeg" alt="/img/Sayli_Photo.jpeg">
-
-  </div>
-</div>
-<div class="outercontent">
-  <div class="categories" id="education">
-  <h1>Education</h1>
-  <div class="cat-content">
-    
-  <div class="schools">
-    <div class="title">
-      MKSSS's Cummins College of Engineering ,Pune
-      <br>  
-      <span>
-        BACHLORS OF ENGINEERING, COMPUTER SCIENCE
-      </span>
-    </div>
-    
-    <div class="coursework">
-      <p>
-        Data Structures and Agorithams,Design and Analysis of Alogrithms<br>
-      Machine Learning,Statistics in Computer Science<br>
-      Object Object Oriented Programming<br>
-      </p>
-      
-      
-      CGPA - 8.4/10
-    </div>
-  </div>
-  <div class="schools">
-    <div class="title">
-      Vidhya Pratishthan's Magarpatta City Public School
-      <br>  
-      <span>
-        10th GRADE
-      </span>
-    </div>
-    
-    <div class="coursework">      
-      CGPA - 91/100
-    </div>
-  </div>
-  </div>
-</div>
-<div class="categories" id="skills">
-  <h1>Skills</h1>
-  <div class="cat-content">
-  <ul class="skill" >
-    <li><span class="skilltype">Languages : </span>Python,Java,SQL</li>
-    <li><span class="skilltype">Python Frameworks : </span>Django,Numpy,Pandas,Scikit-learn,Matplotlib</li>
-    <li><span class="skilltype">Database platforms : </span>MySQL,MongoDB,SQLite3</li>
-  </ul>
-</div>
-</div>
-<div class="categories" id="projects">
-  <h1>Projects</h1>
-  <div class="cat-content">
-    <div class="rows" style="display: flex; justify-content:space-around;">
-      <div class="card">
-        <div class="image"><img src="/img/funstuff.png" alt="/img/funstuff.png"></div>
-         <div class="card-content">
-           <a href="#">
-             <span class="card-title">
-              Art Page
-             </span>
-           </a>
-       
-           <p class="desc">
-             A Website for an Artist which is easy to manage.(using backend login for the admin so they can add new arts or edit them) 
-           </p>
-            <div><span class="action" href="#">
-             Django
-           </span>
-           <span class="action" href="#">
-            Python
-          </span>
-           <span class="action" href="#">
-            SQLite3
-          </span>
-          <span class="action" href="#">
-            HTML
-          </span>
-          <span class="action" href="#">
-            CSS
-          </span>
-        </div>
-          <div style="margin-top: 5%;display: flex;justify-content: end;">
-            <a href="https://github.com/sayli2003/FUNSTUFFS-website"><svg viewBox="0 0 20 20" height="40px" width="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Sayli's github</title> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
-            </a>
-          </div>
-           
-         </div>
-       </div>
-        <div class="card">
-          <div class="image"><img src="/img/tourplanner.png" alt="/img/tourplanner.png"></div>
-           <div class="card-content">
-             <a href="#">
-               <span class="card-title">
-                Automated Tour Planner
-               </span>
-             </a>
-         
-             <p class="desc">
-              Learning practical applications of RDBMS and using stored data to recommand users with tours. With a Admin login so new tours can be added, admin is provided the foreasting on a new tour. 
-             </p>
-              <div><span class="action" href="#">
-               Django
-             </span>
-             <span class="action" href="#">
-              Python
-            </span>
-             <span class="action" href="#">
-              MySQL
-            </span>
-            <span class="action" href="#">
-              KNN Classifier
-            </span>
-            <span class="action" href="#">
-              Decision Tree Classifier
-            </span>
-            
-            
-            <span class="action" href="#">
-              Apriori
-            </span>
-            <span class="action" href="#">
-              CSS
-            </span>
-            <span class="action" href="#">
-              HTML
-            </span>
-          </div>
-            <div style="margin-top: 5%;display: flex;justify-content: end;">
-              <a href="https://github.com/sayli2003/Tour-Reccomandation"><svg viewBox="0 0 20 20" height="40px" width="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Sayli's github</title> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
-              </a>
-            </div>
-             
-           </div>
-          </div>
-          <div class="card">
-            <div class="image"><img src="/img/contact-details.jpeg" alt="/img/contact-details.jpeg"></div>
-             <div class="card-content">
-               <a href="#">
-                 <span class="card-title">
-                  Contact Details
-                 </span>
-               </a>
-           
-               <p class="desc">
-                 A python Tkinter Applicationt to store and retrive multiple contacts belonging to various users. 
-
-                </p>
-                <div>
-               <span class="action" href="#">
-                Python
-              </span>
-               <span class="action" href="#">
-                CSV
-              </span>
-              <span class="action" href="#">
-                Tkinter
-              </span>
-            </div>
-              <div style="margin-top: 5%;display: flex;justify-content: end;">
-                <a href="https://github.com/sayli2003/Contact-Details-Management"><svg viewBox="0 0 20 20" height="40px" width="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
-                </a>
+                </div>
               </div>
-               
-             </div>
             </div>
+          </div>
+        </div>
+
+        <div class="tm-bg-white-transparent tm-welcome-container">
+          <div class="container-fluid">
+            <div class="row h-100">
+              <!-- Welcome Text -->
+              <!-- White transparent bg -->
+              <div class="col-md-7 tm-welcome-left-col">
+                <div class="tm-welcome-left">
+                  <h2 class="tm-welcome-title">Welcome to my web page!!</h2>
+                  <p class="pb-0">
+                    Highly motivated software developer with expertise in Spring Boot and React, experienced in full-stack development. Skilled in creating efficient, user-friendly applications and contributing to project success both independently and in teams. Passionate about learning new technologies and solving complex problems. Seeking opportunities to apply my skills and grow within a dynamic organization.
+
+                  turpis. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-       
-   </div>
-    </div>
-<div class="categories" id="Interests">
-  <h1>Interests</h1>
-  <div class="cat-content">
-    <div style="font-size: 80%;">
-    I take pleasure in crafting character designs through digital art, immersing myself in fiction through reading, and indulging in the art of knitting.<br>
-   My creative pursuits serve as a reminder to maintain a perpetual sense of wonder towards the world around me.
-  </div>
-  <div style="font-size: 80%;padding: 30px 30px 15px 0px;">
-    I've dedicated an Instagram page to showcase a collection of my digital art creations.<br>
-    <span style="font-size:20px;color: #000000a6;">
-      Here are some examples
-    </span>
-  </div>
-  <div class="artwork">
-    <img src="/img/girls-model.png" alt="/img/girls-model.png">
-    <img src="/img/naruto.png" alt="/img/naruto.png">
-    <img src="/img/dog-in the sun.png" alt="/img/dog-in the sun.png">
-    <img src="/img/girl-memory.png" alt="/img/girl-memory.png">
+      
+    </section>
+    <!-- End Welcome section -->
 
-  </div>
-  </div>
-  
-</div>
-<div class="categories" id="contactme">
-  <h1>Let's get in touch</h1>
-  <div style="display: flex;justify-content: center;">
-      <form class="form" action="https://formspree.io/f/xyyqeldw" method="POST">
-    <span style="font-size:15px;color:#000000a6;">I'll always be open to feedback</span>
-      <input class="form-control" name="name" type="text" placeholder="Your Name" data-sb-validations="required" />
-      <input class="form-control" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-      <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                               
+    <!-- Portfolio section -->
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-portfolio-item" style="display: flex; align-items: center; justify-content: space-between;">
+              
+              <div class="skills">
+                <strong>Skills</strong>
+
+                <ol class="alternating-colors">
+                  <li>
+                    <strong>Languages: </strong>
+                    <p>Java, Python</p>
+                  </li>
+                  <li>
+                    <strong>Databases: </strong>
+                    <p>SQL, MongoDB, PostgreSQL</p>
+                  </li>
+                  <li>
+                    <strong>Frameworks</strong>
+                    <p>Django, (currently working on)SpringBoot, Kafka</p>
+                  </li>
+                  <li>
+                    <strong>Knowledge: </strong>
+                    <p>HTML, CSS, DSA, OOP, ML</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="vl" style="margin: 3%; border-left: 3px solid rgb(13, 0, 128); height: 400px;"></div>
+              <div class="education">
+                <strong>Education</strong>
+                <table class="table table-borderless p-4">
+                  <tbody>
+                    <tr>
+                      <td>MKSSS’s Cummins College of Engineering </td>
+                      <td class="to-right">2021 - 2025</td>
+                    </tr>
+                    <tr>
+                      <td>B. Tech Computer Engineering(Upto Third Year)</td>
+                      <td class="to-right">CGPA 8.4</td>
+                    </tr>
+                    <tr>
+                      <td>MH CET </td>
+                      <td class="to-right">83.33%</td>
+                    </tr>
+                    <tr>
+                      <td>HSC 12th </td>
+                      <td class="to-right">Percentile 97.5 </td>
+                    </tr>
+                    <tr>
+                      <td>ICSE 10th</td>
+                      <td class="to-right">91%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            </div>
+
+            <div class="experience">
+              <strong>Experience</strong>
+              <ol class="exp-list" style="--length: 5" role="list">
+                <li class="exp-list-item" style="--i: 5">
+
+                  <div class="job-title" style="display: flex; justify-content: space-between; align-items: center;"><h4 style="margin: 0px;">Citi Bank</h4><img width="50px" style="margin-right: 4%;" src="img/logo.svg" alt="img/logo.svg"></div>
+                  <h6>June -July</h6>
+                  <ul class="job-desp" style="list-style-type: circle;">
+                    <li>Worked as a part of the Custody Transformation team to develop a solution to display a dashboard showing data analysis.</li>
+                    <li>Collected Data from Kafka, Built a Consumer capable to listening to multiple topics concurrently.</li>
+                    <li>Used SpringBoot to develop Api to handle Data Transfer to the front-end, using algorithms such as the binary search algorithm, to quickly handle data.</li>
+                    <li>Worked with Material UI(AG Grids, LineChart, BarChart, Pagination) for components and designed frontend elements using HTML, CSS and React.</li>
+                    <li>Used H2 Database to store and CRUD Data Operations.</li>
+                  </ul> 
+                  </li>
+                <li class="exp-list-item" style="--i: 1">
+                  <div class="job-title" style="display: flex; justify-content: space-between; align-items: center;"><h4 style="margin: 0px;">Rhythmflows Solutions</h4><img width="150px" style="margin-right: 4%;" src="img/logoh-230x68.png" alt="img/logoh-230x68.png"></div>
+                  <h6>August - present</h6>
+                  <ul class="job-desp" style="list-style-type: circle;">
+                    <li>Worked as a part of the Payments Team to Develop security features and developed algorithms such as RSA Encrytion, and Integrated the same with the frontend.</li>
+                    <li>Used Ant Design Library for the frontend Development.</li>
+                    <li>Worked with Java streams, schedulers.</li>
+                  </ul> 
+               </li>
+              </ol>
+            </div>
+
+            <div class="projects">
+              <strong>Projects</strong>
+              <div class="content-container">
+              <div class="list-container">
+                <ul class="projects-list">
+                  <li class="projects-list-item">
+                    <p><strong>Investor app -</strong> <br>
+                      <ul style="list-style-type: circle; font-size: smaller; margin-left: 2%;">
+                          <li>Developed a web application where users can buy, sell, monitor, in the share markets using HTML, CSS and thymeleaf for the frontend and H2 as the database</li>
+                          <li>SpringBoot framework to build the service. </li>
+                          <li>User can read news regarding a Company and how it can affect the stock markets. </li>
+                          <li>Added visuals such as graphs to visualize the live share market charts. </li>
+                          <li>Additional watchlist option was also provided. </li>
+                        </ul>   
+                    </p>
+                  </li>
+                  <li class="projects-list-item">
+                    <p><strong>Tour Recommendation -</strong> <br>
+                      <ul style="list-style-type: circle; font-size: smaller; margin-left: 2%;">
+                        <li>Developed a dynamic website with Python, HTML, CSS, and Django templates for tour recommendations. </li>
+                        <li>Integrated MySQL for data storage and retrieval. </li>
+                        <li>Implemented KNN and Apriori algorithms for tour recommendations. </li>
+                        <li>Added admin functionality for managing new tour plans and used ML algorithms to predict their success.</li>
+                      </ul>
+                    </p>
+                  </li>
+                  <li class="projects-list-item">
+                    <p>
+                      <strong>Messaging App(Hubbers) -</strong> <br>
+                      <ul style="list-style-type: circle; font-size: smaller; margin-left: 2%;">
+                        <li>Developed a dynamic web application using JSP with JDBC to MySQL, enabling cross-college chat interactions between junior and senior students. </li>
+                        <li>Facilitated resource sharing and community building with HTML and CSS for the front-end.</li>
+                      </ul>
+                    </p>
+                  </li>
+                  <li class="projects-list-item">
+                    <p>
+                      <strong>Summarization AI -</strong> <br>
+                      <ul style="list-style-type: circle; font-size: smaller; margin-left: 2%;">
+                        <li>Designed and developed an Android app using Android Studio to summarize text, audio, and video inputs.</li> 
+                        <li>Utilized Volley for API interactions, Android Mail for email, and Firebase for additional features. </li>
+                        <li>Implemented diverse layouts for bottom navigation and drawer activities. </li>
+                        <li>Users can save summaries as PDFs, email them, or read them within the app.</li>
+
+                      </ul>
+                     </p>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+
+            <div class="courses">
+              <strong>Courses</strong>
+              <div class="items">
+                <div class="items-body">
+                  <div class="items-body-content">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/VC48BH8UTT3R">
+                    <span>Stanford University - Advanced Learning Algorithms</span>
+                    <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <div class="items-body-content">
+                    
+                    <a href="https://coursera.org/verify/P783GEJJDNCS">
+                    <span>University of Michigan - Data Collection and Processing with Python.</span>
+                    <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <div class="items-body-content">
+                    
+                    <a href="https://coursera.org/share/5ec7d9859d35d72c3ea84431329bef8d">
+                    <span>Foundations of Cybersecurity</span>
+                    <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <div class="items-body-content">
+                    
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/VC48BH8UTT3R">
+                    <span>Ultimate AWS Certified Cloud Practitioner CLF-C02 </span>
+                    <i class="fa fa-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tm-portfolio-item" style="display: flex; align-items: center; justify-content: space-between;">
+              
+              <div class="skills p-4">
+                <strong>AWARDS AND CERTIFICATIONS</strong>
+                <ol class="points-single">
+                  <li>
+                    <strong>Tech Jumanji(college event)- Quiz and Competitive Coding 2nd runner up</strong>
+                  </li>
+                  <li>
+                    <strong>Mozilla campus club - Spring of Code</strong>
+                  </li>
+                  <li>
+                    <strong>CodeX-MITWPU-4th position</strong>
+                  </li>
+                </ol>
+              </div>
+              <div class="vl" style="margin: 3%; border-left: 3px solid rgb(13, 0, 128); height: 350px;"></div>
+              <div class="skills p-4">
+                <strong>VOLUNTEERING</strong>
+                <ol class="points-single">
+                  <li>
+                    <strong>UBS Hackathon event at College</strong>
+                  </li>
+                  <li>
+                    <strong>Samyak Drishti Foundation (NGO)</strong>
+                  </li>
+                  <li>
+                    <strong>Eaton Garnishing Talent (Buddy)</strong>
+                  </li>
+                  <li>
+                    <strong>Designed the first logo of Gandhaar</strong>
+                  </li>
+                  <li>
+                    <strong>Co-ordinated a hands-on workshop on Deep Learning</strong>
+                  </li>
+                  <li>
+                    <strong>Blood Donation Drive </strong>
+                  </li>
+                </ol>
+              </div>
+             
+              
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End portfolio section -->
      
-    <button type="submit">Submit</button>
-  </div>
 
-</form>
-</div>
-<script>
-window.onscroll = function() {myFunction()};
+    <!-- Contact section -->
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h1 style="color: white;">Let's get in touch</h1>
+        <div style="display: flex;justify-content: center; width: 100% !important;">
+            <form class="form w-50 align-middle" action="https://formspree.io/f/xyyqeldw" method="POST">
+              <span style="font-size:15px;color:#ecececa6;">I'll always be open to feedback</span>
+              <input class="form-control w-100 p-3" name="name" type="text" placeholder="Your Name" data-sb-validations="required" />
+              <input class="form-control w-100 p-3" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+              <textarea class="form-control w-100 p-3" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+              <button class="btn btn-primary" type="submit">Submit</button>    
+          </form>
+      </div>
+    </div>
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
 
-</body>
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
 </html>

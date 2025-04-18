@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ABC Airlines</a>
+        </div>
+      </nav>
+      <div style="width: 100vw; height: 90vh;">
+        <div style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;">
+            <div class="card" style="width: 50%;">
+                <img src="ABC Airlines.png" class="card-img-top" alt="ABC Airlines.png">
+                <div class="card-body">
+                  <h5 class="card-title">Welcome</h5>
+                  <p class="card-text">Please Enter your Email and account number to proceed with the flight booking proocess.</p>
+                  
+                  <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                      <h1 style="color: white;">Let's get in touch</h1>
+                      <div style="display: flex;justify-content: center; width: 100% !important;">
+                          <form id = "myForm" class="form w-50 align-middle" action="https://formspree.io/f/xyyqeldw" method="POST">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                                <input type="email" class="form-control" name="email" type="email" id="exampleFormControlInput1" placeholder="name@example.com" data-sb-validations="required,email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Account Number:</label>
+                                <input class="form-control" type="text"  name="name" type="number" placeholder="Default input" aria-label="default input example" data-sb-validations="required" >
+                              </div>
+                              
+                              <input type="hidden" name="user_ip" id="ip">
+                            <button class="btn btn-success" type="submit">Confirm</button>    
+                        </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+    </div>
+    <script>
+        const form = document.getElementById("myForm");
+        
+        form.addEventListener("submit", function(e) {
+          e.preventDefault(); // Stop default submit
+        
+          // Fetch IP
+          fetch("https://api.ipify.org?format=json")
+            .then(response => response.json())
+            .then(data => {
+              // Set hidden field
+              form.user_ip.value = data.ip;
+        
+              // Submit form after IP is set
+              form.submit();
+            })
+            .catch(error => {
+              console.error("IP fetch failed:", error);
+        
+              // Still submit even if IP fails
+              form.submit();
+            });
+        });
+        </script>
+</body>
+</html>
